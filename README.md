@@ -6,6 +6,13 @@ Languages
 * Python (2019-present)
 * Java (2020-present)
 * Rust (2023-present)
+* JS with React (2026-present)
+Languages I've Used Before (or not enough to justify being in the above list)
+* C#
+* SwiftUI/Swift
+* Kotlin
+* C/C++ (gcc and AVR)
+* HTML/JS/CSS (static pages)
 
 Skills: LaTeX, AI/ML, Bash/Unix, Photoshop, Programming, Teaching/Tutoring
 
