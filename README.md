@@ -7,6 +7,7 @@ Languages
 * Java (2020-present)
 * Rust (2023-present)
 * JS with React (2026-present)
+
 Languages I've Used Before (or not enough to justify being in the above list)
 * C#
 * SwiftUI/Swift
