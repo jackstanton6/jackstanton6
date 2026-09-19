@@ -14,6 +14,7 @@ Languages I've Used Before (or not enough to justify being in the above list)
 * Kotlin
 * C/C++ (gcc and AVR)
 * HTML/JS/CSS (static pages)
+* R
 
 Skills: LaTeX, AI/ML, Bash/Unix, Photoshop, Programming, Teaching/Tutoring
 
