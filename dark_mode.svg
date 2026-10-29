@@ -35,7 +35,7 @@ text, tspan {white-space: pre;}
 <tspan x="15" y="390">    /   [__][____________][__]    \</tspan>
 <tspan x="15" y="410">   '-------------------------------'</tspan>
 <tspan x="15" y="430"/>
-<tspan x="15" y="450">          jack stanton  //  usyd '30</tspan>
+<tspan x="15" y="450">       jack stanton  //  usyd '30</tspan>
 </text>
 <text x="390" y="30" fill="#c9d1d9">
 <tspan x="390" y="30">jack@stanton</tspan> -———————————————————————————————————————————-—-
