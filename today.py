@@ -216,7 +216,9 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
         edges += request.json()['data']['user']['repositories']['edges']            # Add on to the LoC count
         return loc_query(owner_affiliation, comment_size, force_cache, request.json()['data']['user']['repositories']['pageInfo']['endCursor'], edges)
     else:
-        return cache_builder(edges + request.json()['data']['user']['repositories']['edges'], comment_size, force_cache)
+        edges = edges + request.json()['data']['user']['repositories']['edges']
+        edges = [e for e in edges if e and e.get('node')]  # skip repos the token can't read
+        return cache_builder(edges, comment_size, force_cache)
 
 
 def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
@@ -316,7 +318,9 @@ def stars_counter(data):
     Count total stars in repositories owned by me
     """
     total_stars = 0
-    for node in data: total_stars += node['node']['stargazers']['totalCount']
+    for node in data:
+        if node and node.get('node'):  # skip repos the token can't read (GitHub returns null for them)
+            total_stars += node['node']['stargazers']['totalCount']
     return total_stars
 
 
